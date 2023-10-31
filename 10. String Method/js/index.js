@@ -137,5 +137,91 @@ c = a.replace("Batman" , "Spiderman");
 console.log(c); //I am Spiderman da Venna Mavane
 
 
-console.log("------------Replace-------------------")
-//---------------------Replace-----------------------------------------------------------------------------
+console.log("------------Includes-------------------")
+//---------------------Includes-----------------------------------------------------------------------------
+
+// we can use include function for find whether a string is in the array or not.
+
+const pets = ['cat' , 'dog' , 'cow'];
+
+c = pets.includes('cat');
+console.log(c); //true
+c = pets.includes('bat');
+console.log(c); //false;
+
+
+console.log("------------Trim-------------------")
+//---------------------Trim-----------------------------------------------------------------------------
+
+// by this function we can clean the white spaces in the string
+//So that it'll helpful when to verify username or password like that
+
+a ="   Akar   ";
+//now see the lengtg of the string
+console.log(a.length); //10
+a = a.trim();
+console.log(a.length); //4
+
+
+console.log("------------PadStart-------------------")
+//---------------------PadStart-----------------------------------------------------------------------------
+
+//By this function we can add any charecter to the start of the string
+// we needs to define the starting letter and what charector we have to add in the starting
+
+
+a = "5";
+
+a = a.padStart(4,0); //in here we define that we it needs to add more 3 charactors which has to be 0
+console.log(a); //0005
+
+//or 
+a = "H";
+a = a.padStart(4 , 'A');
+console.log(a);  //AAAH
+
+console.log("------------PadEnd-------------------")
+//---------------------PadEnd-----------------------------------------------------------------------------
+
+// By this fuction we can add any extra values in last
+
+a = "5";
+a = a.padEnd(4 , 0);   // so that we define we needs to add 4 times '0' in last  
+console.log(a); //5000
+
+a = "H";
+a = a.padEnd(4 , 'A');
+console.log(a);
+
+
+
+console.log("------------Long Literal String-------------------")
+//---------------------Long Literal String-----------------------------------------------------------------------------
+
+//we can Write long String like Concordination 
+let lngString = "This is a very long string which needs " +
+ "to wrap across multiple lines because " +
+  "otherwise my code is unreadable.";
+console.log(lngString);
+
+// also we can add \n to break the line
+lngString = "This is a very long string which needs \
+ to wrap across multiple lines because \
+  otherwise my code is unreadable.";
+console.log(lngString);
+
+//or we can use backtick
+lngString = `This is a very long string which needs 
+to wrap across multiple lines because 
+ otherwise my code is unreadable.`;
+
+
+
+ 
+console.log("------------ASCII to String-------------------")
+//---------------------ASCII to String-----------------------------------------------------------------------------
+
+
+// we can use String.fromCharCode() function to convert ASCII to String
+c = String.fromCharCode(65 , 66 , 67);
+console.log(c); //ABC
