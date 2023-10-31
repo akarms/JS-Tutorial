@@ -225,3 +225,5 @@ console.log("------------ASCII to String-------------------")
 // we can use String.fromCharCode() function to convert ASCII to String
 c = String.fromCharCode(65 , 66 , 67);
 console.log(c); //ABC
+
+
